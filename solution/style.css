@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(240, 75%, 98%);
+}
+header{
+    width: 100%;
+    height: auto;
+    padding: 10px 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container img{
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style-type: none;
+}
+.nav-list a{
+    text-decoration: none;
+    color:hsl(238, 22%, 44%);
+}
+
+/* first section */
+
+.first-section{
+    padding: 10% 10%;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.text-content h2{
+    font-size: 2rem;
+}
+.text-content p{
+    padding-right: 10px;
+    /* line-height: 20px; */
+
+}
+.text-content .input{
+    margin-top: 10px;
+}
+.input #email{
+    padding: 10px 2rem;
+    border-radius: 0.2rem;
+    border: 1px solid grey;
+    margin-right: 5px;
+}
+.input #submit{
+    padding: 10px 3rem;
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+    cursor: pointer;
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+}
+
+/* main-section */
+.main{
+    padding: 30% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 5%;
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main h1{
+    font-size: 2rem;
+}
+
+
+.main-text .link a{
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    padding-bottom: 5px;
+}
+.main-text .quote {
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.avater-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+.avater-info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.main-image img{
+    width: 100%;
+    height: auto;
+}
+
+/* footer */
+.topping{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(238, 22%, 44%);
+    width: 100%;
+    height: 200px;
+    color: white;
+    padding: 0 10%;
+}
+.topping-text{
+    flex-basis: 40%;
+}
+.topping-text h2{
+    margin-bottom: 1rem;
+}
+.topping-input{
+    flex-basis: 35%;
+}
+.topping input{
+    display: block;
+    border-radius: 0.2rem;
+    border: none; 
+}
+
+.topping input:first-child{
+    padding: 10px 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+.topping input::placeholder{
+    color: grey;
+}
+.topping input:last-child{
+    padding: 10px 20px;
+    color: white;
+    background-color: hsl(224, 93%, 58%);
+    cursor: pointer;
+}
+.base{
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+    padding: 5% 10%;
+    height: 50vh;
+    font-size: 0.8rem;
+}
+
+.base .list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10px;
+    width: 100%;
+}
+.list .contact{
+    display: flex;
+    gap: 10px;
+}
+.list li{
+    margin-bottom: 10px;
+}
+.list .cont{
+    list-style-type: none;
+
+}
+.list a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+.social-media .s-m{
+    display: grid;
+    place-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+
+@media screen and (min-width: 550px) {   
+    .main-text>h5 {
+        padding-right: 5rem;
+    }
+    .main-text .quote {
+        margin: 0 40% 0 0;
+    }
+    .text-content input{
+        margin-bottom: 10px;
+    }
+}
+    
+@media screen and (max-width: 550px) {
+    .first-section{
+        margin-top: 30%;
+    }
+    .first-section{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+        padding-top: 5rem;
+    }
+    .text-content h2{
+        margin-bottom: 20px;
+    }
+    .text-content input{
+        display: block;
+    }
+    .text-content #email{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .text-content #submit{
+        width: 100%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+    .main-text h1{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .main-text .link {
+        text-align: center;
+    }
+   .topping{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: auto;
+    gap: 20px;
+   }
+   
+   .topping input:last-child{
+        width: 100%;
+        text-align: center;
+    }
+    .base{
+        width: 100%;
+        height: auto;
+    }
+    .base .list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .social-media{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .logo-container{
+        display: flex;
+        align-items: flex-start;
+    }
+    .nav-item{
+        display: flex;
+        flex-direction: column;
+    }
+}
